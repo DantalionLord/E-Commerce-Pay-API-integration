@@ -1,0 +1,26 @@
+{
+  "name": "payment-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "vercel-build": "next build",
+    "test:idempotency": "node scripts/test_idempotency.js",
+    "test:idempotency:stripe": "node scripts/test_idempotency.js stripe",
+    "test:idempotency:paypal": "node scripts/test_idempotency.js paypal",
+    "test:idempotency:tropipay": "node scripts/test_idempotency.js tropipay"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "node-fetch": "^2.6.7",
+    "pg": "^8.10.0",
+    "uuid": "^9.0.0",
+    "micro": "^9.3.4",
+    "stripe": "^12.0.0",
+    "raw-body": "^2.5.1"
+  }
+}
