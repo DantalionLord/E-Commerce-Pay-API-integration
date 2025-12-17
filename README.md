@@ -1,4 +1,4 @@
-# Payment Backend (Stripe + PayPal)
+# Payment Backend (Stripe + PayPal + TropiPay)
 
 Este proyecto contiene API routes de Next.js (carpeta `pages/api/*`) pensadas para desplegar en Vercel. Expone integraciones básicas con Stripe y PayPal y guarda registros en PostgreSQL.
 
@@ -29,7 +29,7 @@ Despliegue en Vercel:
 Prueba local con Next.js:
 1. Instala dependencias:
 ```powershell
-cd 'C:\Users\Dantalion\Documents\Code Projects\Manu App\payment-backend'
+cd 'Carpeta del proyecto'
 npm install
 ```
 2. Ejecuta en modo dev:
@@ -130,3 +130,4 @@ Respuesta esperada (depende de TropiPay):
 ```
 
 Nota: el handler de TropiPay es genérico — revisa la documentación oficial de TropiPay y ajusta el `create_tropipay_payment` para usar los campos exactos (por ejemplo `return_url`, `customer` u otros) requeridos por su API.
+
