@@ -1,6 +1,6 @@
 # Payment Backend (Stripe + PayPal + TropiPay)
 
-Este proyecto contiene API routes de Next.js (carpeta `pages/api/*`) pensadas para desplegar en Vercel. Expone integraciones básicas con Stripe y PayPal y guarda registros en PostgreSQL.
+Este proyecto contiene API routes de Next.js (carpeta `pages/api/*`) pensadas para desplegar en Vercel. Expone integraciones básicas con Stripe, PayPal y TropiPay y guarda registros en PostgreSQL.
 
 Rutas principales (Next.js API routes):
 - `POST /api/create_stripe_payment_intent` -> Crea un PaymentIntent en Stripe y devuelve `clientSecret`.
@@ -130,4 +130,5 @@ Respuesta esperada (depende de TropiPay):
 ```
 
 Nota: el handler de TropiPay es genérico — revisa la documentación oficial de TropiPay y ajusta el `create_tropipay_payment` para usar los campos exactos (por ejemplo `return_url`, `customer` u otros) requeridos por su API.
+
 
